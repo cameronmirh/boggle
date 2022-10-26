@@ -1,25 +1,4 @@
-/*
- * CS 106B Boggle
- * This file declares the graphics support functions for Boggle.
- * The functions appear in a namespace, so to use them, you must write e.g.
- *
- * BoggleGUI::initialize(4, 4);
- * BoggleGUI::setScore(42, BoggleGUI::HUMAN);
- *
- * Please do not modify this provided file. Your turned-in files should work
- * with an unmodified version of all provided code files.
- *
- * Version: Sat 2014/02/10
- * Author : original version by Eric Roberts and Julie Zelenski;
- *          modified substantially by Marty Stepp for Autumn 2013
- *
- * Recent Changes:
- * - 2014/02/10: Added setHighlighted(row, col, bool) function.
- * - 2014/02/10: Significant refactoring to improve performance and robustness.
- *               GUI was creating tons of wasted rectangles and shapes and not
- *               cleaning them up.  Caused increasing slowdown over time.
- *               GUI now uses stateful shapes that persist.
- */
+
 
 #ifndef _bogglegui_h
 #define _bogglegui_h
