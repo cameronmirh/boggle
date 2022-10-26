@@ -1,2 +1,2 @@
 # boggle
-Creating Boggle in C++
+The game Boggle allows you to play against a computer to identify words in the GUI.
