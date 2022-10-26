@@ -1,36 +1,4 @@
-/*
- * CS 106B Boggle
- * This file implements the graphics support functions for Boggle.
- *
- * Please do not modify this provided file. Your turned-in files should work
- * with an unmodified version of all provided code files.
- *
- * Version: Tue 2014/02/10
- * Author : original version by Eric Roberts and Julie Zelenski;
- *          modified by Marty Stepp for Autumn 2013 and Winter 2014
- *
- * Recent Changes:
- * - 2014/02/10: Significant refactoring to improve performance and robustness.
- *               GUI was creating tons of wasted rectangles and shapes and not
- *               cleaning them up.  Caused increasing slowdown over time.
- *               GUI now uses stateful shapes that persist.
- *
- * Known open issue: Leaks memory for all GObjects created.  Oops.
- * I would fix this, but I don't have time to figure out whether
- * freeing them would break things in the Java Back End.  -- Marty
- */
 
-/*
- * General implementation notes
- * ----------------------------
- * This file implements the graphics support functions for the Boggle
- * program.  It makes straightforward use of the extended graphics
- * library to draw the cubes, board, letters, scoreboard, etc. The
- * implementations of the individual functions are fairly simple
- * and many of the helper functions do not require individual comments.
- * For descriptions of the behavior of the exported functions,
- * please see the interface file.
- */
 
 #include <string>
 #include "bogglegui.h"
